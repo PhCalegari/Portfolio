@@ -1,0 +1,112 @@
+        body{
+            background-color: #081B29;
+            font-family: "Montserrat", sans-serif;
+            color: white;
+            position: relative;
+        }
+        #nome{
+            margin-left: 6%;
+            margin-top: 1%;
+        }
+        nav {
+            margin-top: -3%;
+            margin-left: 76%;
+            margin-bottom: 10%;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-right: 20px;
+        }
+        nav a:hover {
+            color: #00FFFF; 
+        }
+        h4{
+            color:#00FFFF ;
+        }
+        #inicio{
+            margin-left: 3%;
+        }
+        #sobre{
+            margin-top: 30%;
+            text-align: center;
+        }
+        #inicio::after {
+            content: "";
+            position: absolute;
+            margin-left: 48%;
+            margin-top: -16%;
+            width: 35%;
+            height: 20%;
+            background-image: url('eu.png');
+            background-size: cover;
+            background-position: center;
+            mix-blend-mode: overlay(10%);
+            border-radius: 50%;
+            z-index: -1;
+        }
+        .sobre-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #txt1{
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+        h5{
+            display: flex;
+            justify-content: center;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .social-icons img {
+            width: 40px;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+        #habilidades {
+            text-align: center;
+            margin-top: 50px;
+        }
+        #graficos-container {
+            display: flex;
+            margin-left: 20%;
+            margin-top: 20px;
+        }
+        .grafico {
+            margin: 0 10px;
+        }
+        #tecnologias {
+            margin-top: 50px;
+            margin-left: 10%;
+            display: flex;
+        }
+        .tecnologia {
+            margin-right: 20px;
+        }
+        .tecnologia img {
+            width: 120px;
+            height: auto;
+        }
+        #cursos {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .curso-container {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .curso {
+            width: 45%;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
