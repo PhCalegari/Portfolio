@@ -1,151 +1,280 @@
-body {
-  background-color: #081B29;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  position: relative;
-  margin: 0;
-  padding: 0;
-}
 
-#nome {
-  margin-left: 6%;
-  margin-top: 1%;
-}
+            body {
+            background-color: #081B29;
+            font-family: "Montserrat", sans-serif;
+            color: white;
+            line-height: 1.2;
+            font-weight: 500;
+            margin: 0;
+            padding: 0;
+        }
 
-nav {
-  margin-top: -3%;
-  margin-left: 76%;
-  margin-bottom: 10%;
-}
+        #nome {
+            margin-left: 6%;
+            margin-top: 5%;
+        }
 
-nav a {
-  text-decoration: none;
-  color: white;
-  margin-right: 20px;
-}
+        nav {
+            margin-top: -3%;
+            margin-left: 60%;
+        }
 
-nav a:hover {
-  color: #00FFFF;
-}
+        nav a {
+            text-decoration: none;
+            color: white;
+            margin-right: 20px;
+            padding: 8px 12px;
+        }
 
-h4 {
-  color: #00FFFF;
-}
+        nav a:hover {
+            color: #00FFFF;
+        }
 
-#inicio {
-  margin-left: 3%;
-}
+        .pure-button {
+            background-color: transparent;
+            border: 1px solid #00FFFF;
+            color: white;
+            transition: background-color 0.3s;
+        }
 
-#sobre {
-  margin-top: 30%;
-  text-align: center;
-}
+        .pure-button:hover {
+            background-color: #00FFFF;
+            color: black;
+        }
 
-#inicio::after {
-  content: "";
-  position: absolute;
-  margin-left: 48%;
-  margin-top: -16%;
-  width: 35%;
-  height: 20%;
-  background-image: url('eu.png');
-  background-size: cover;
-  background-position: center;
-  mix-blend-mode: overlay(10%);
-  border-radius: 50%;
-  z-index: -1;
+        h4 {
+            color: #00FFFF;
+        }
+
+        #inicio {
+            display: flex;
+            margin-bottom: 300px;
+            align-items: center;
+            margin-left: 3%;
+            margin-top: 1px;
+        }
+
+        .profile-img {
+            width: 400px;
+            height: auto;
+            margin-right: 30px;
+            border-radius: 10px;
+        }
+
+        #sobre {
+            margin-top: 50px;
+            text-align: center;
+            margin-left: 30px;
+        }
+
+        .sobre-container {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #txt1 {
+            margin-left: 0%;
+            margin-right: 60%;
+        }
+
+        #txt2 {
+            margin-left: 30%;
+        }
+
+        h5 {
+            justify-content: center;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: left;
+            margin-top: 20px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            margin: 0 10px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons img:hover {
+            transform: scale(1.2);
+        }
+
+        #habilidades {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #graficos-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .grafico {
+            margin: 0 10px;
+        }
+
+        #tecnologias {
+            margin-top: 50px;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .tecnologia {
+            margin: 0 10px;
+        }
+
+        .tecnologia img {
+            width: 120px;
+            height: auto;
+        }
+
+        #cursos {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .curso-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .curso {
+            flex: 1 1 300px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        #github-info {
+            margin-top: 50px;
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+
+        .repo-item {
+            text-align: center;
+            padding: 10px;
+        }
+
+        .retangulo {
+            display: inline-block;
+            background-color: rgba(0, 255, 255, 0.2);
+            border: 1px solid rgba(0, 255, 255, 1);
+            color: white;
+            padding: 100px 100px;
+            text-decoration: none;
+            margin: 5px;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
+
+        }
+        .retangulo:hover {
+            background-color: #00FFFF;
+            /* Cor de fundo no hover */
+            color: black;
+            /* Cor do texto no hover */
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                margin-left: 0;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            #inicio::after {
+                margin-left: 20%;
+            }
+
+            #txt1 {
+                margin-left: 10%;
+                margin-right: 10%;
+            }
+
+            .curso-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+        #sobre {
+    margin-top: 50px;
+    text-align: center;
 }
 
 .sobre-container {
-  text-align: center;
-  margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    text-align: left;
 }
 
-#txt1 {
-  margin-left: 30%;
-  margin-right: 30%;
+#sobre-img {
+    flex: 0 0 auto;
+    margin-right: 20px;
 }
 
-h5 {
-  display: flex;
-  justify-content: center;
-}
-
-.social-icons {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.social-icons img {
-  width: 40px;
-  margin: 0 10px;
-  transition: transform 0.3s;
-}
-
-.social-icons img:hover {
-  transform: scale(1.2);
-}
-
-#habilidades {
-  text-align: center;
-  margin-top: 50px;
-}
-
-#graficos-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-.grafico {
-  margin: 0 10px;
-}
-
-#tecnologias {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.tecnologia {
-  margin: 0 10px;
-}
-
-.tecnologia img {
-  width: 120px;
-  height: auto;
-}
-
-#cursos {
-  text-align: center;
-  margin-top: 50px;
-}
-
-.curso-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
-}
-
-.curso {
-  flex: 1 1 300px;
-  background-color: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  padding: 20px;
-  box-sizing: border-box;
+#sobre-texto {
+    flex: 2;
+    margin-right: 20px;
 }
 
 @media (max-width: 768px) {
-  nav {
-      margin-left: 0;
-      margin-top: 10px;
-      text-align: center;
-  }
+    .sobre-container {
+        flex-direction: column;
+        text-align: center;
+    }
 
-  #inicio::after {
-      margin-left: 20%;
-  }
+    #sobre-img, #sobre-texto {
+        margin: 0;
+    }
+
+    #sobre-img {
+        margin-bottom: 20px;
+    }
 }
+#contato {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #form-contato {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #form-contato input,
+        #form-contato textarea {
+            width: 100%;
+            max-width: 500px;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #00FFFF;
+            border-radius: 5px;
+            background-color: transparent;
+            color: white;
+        }
+
+        #form-contato button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #00FFFF;
+            color: black;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        #form-contato button:hover {
+            background-color: #007FFF;
+        }
